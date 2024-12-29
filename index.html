@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naps</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .username {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .links a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .links a:hover {
+            color: #5b5b5b;
+        }
+
+        .socials {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .socials a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .socials a:hover {
+            color: #3e3e3e;
+        }
+
+        .typing {
+            display: inline-block;
+            border-right: 2px solid #000000;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3s steps(30, end), blink 0.5s step-end infinite alternate;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            from { border-color: transparent; }
+            to { border-color: black; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Social Media Links in the Corner -->
+    <div class="socials">
+        <a href="https://github.com/hatmannaps" target="_blank">GitHub</a>
+        <a href="https://discordapp.com/users/1071503527643455488" target="_blank">Discord</a>
+    </div>
+
+    <!-- Username with Typing Animation -->
+    <div class="username">
+        <span class="typing">naps</span>
+    </div>
+
+    <!-- Links to Projects -->
+    <div class="links">
+        <a href="https://hatmannaps.github.io/hatman.github.io/" target="_blank">The Hat Man Discord Bot</a>
+    </div>
+
+    <script>
+        // Optionally add interactivity or animations here
+        console.log("Portfolio loaded successfully.");
+    </script>
+</body>
+</html>
